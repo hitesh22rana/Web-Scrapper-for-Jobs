@@ -1,7 +1,7 @@
 <h1 align = "center"> Web Scrapper for Jobs </h1>
 <br>
 <ul>
-    <li>This web scrapper is targeted for python jobs from the website timesjobs.com</li>
+    <li>This web scrapper is targeted for python jobs from the website <a href ="https://www.timesjobs.com/">timesjobs.com </a></li>
     <li>Using this script you can track status for your jobs along with the the places and skills required.</li>
     <li>To run the script you need to have following things :-</li>
     <ul>

@@ -1,4 +1,4 @@
-<h1> Web Scrapper for Jobs </h1>
+<h1 align = "center"> Web Scrapper for Jobs </h1>
 <br>
 <ul>
     <li>This web scrapper is targeted for python jobs from the website timesjobs.com</li>

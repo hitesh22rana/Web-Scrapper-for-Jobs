@@ -1,0 +1,1 @@
+# All the posts are stored in this folder

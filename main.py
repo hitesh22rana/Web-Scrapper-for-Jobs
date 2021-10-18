@@ -6,8 +6,7 @@ import lxml
 # Filtering out some information
 
 print("Put some skills that you are not familiar with")
-unfamiliar_skills = list(map(str,input("> ").split()))
-
+unfamiliar_skills = list(map(str,input("> ").replace(',','').split()))
 
 print("Filtering out :",end = " ")
 for item in unfamiliar_skills:
@@ -52,7 +51,7 @@ def find_jobs():
             skills_check = check(skills)
 
             if(skills_check == True):
-                with open(f'posts/{index}.txt','w') as f:
+                with open(f'posts/{company_name.strip()}.txt','a+') as f:
                     f.write(f"company name : {company_name.strip()}")
                     f.write("\n")
                     f.write("\n")
@@ -60,12 +59,9 @@ def find_jobs():
                     f.write("\n")
                     f.write("\n")
                     f.write(f"More Info : {more_info}")
-            print(f"File Saved : {index}")
+
+    print(f"Files are Saved")
 
 
-if __name__ == '__main__':
-    while True:
-        find_jobs()
-        time_wait = 1
-        print(f"Waiting {time_wait} minutes...")
-        time.sleep(time_wait*60)
+if __name__ == '__main__':    
+    find_jobs()
